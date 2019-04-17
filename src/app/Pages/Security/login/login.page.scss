@@ -1,0 +1,26 @@
+#login-form {
+  padding: 16px;
+}
+
+#submit-btn {
+
+}
+
+.actions-list ion-item {
+  text-align: center;
+  font-size: small;
+}
+
+ion-col {
+  text-align: center;
+
+  .forget-password {
+      font-size: small;
+  }
+
+  strong {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

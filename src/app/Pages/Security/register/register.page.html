@@ -1,0 +1,95 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Register</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides #slider scrollbar="false">
+        <ion-slide>
+            <ion-list lines="full">
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Prénom</ion-label>
+                            <ion-input type="text" name="first_name"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Nom</ion-label>
+                            <ion-input type="text" name="last_name"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Email</ion-label>
+                            <ion-input type="text" name="email"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Mot de passe</ion-label>
+                            <ion-input type="password" name="password"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12" class="professional-input">
+                        <ion-item lines="none">
+                            <ion-label>Je suis un(e) professionel(le)</ion-label>
+                            <ion-checkbox slot="start"></ion-checkbox>
+                        </ion-item>
+                    </ion-col>
+
+                </ion-row>
+            </ion-list>
+        </ion-slide>
+        <ion-slide>
+            <ion-list lines="full">
+                <ion-row>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Code Postal</ion-label>
+                            <ion-input type="text" name="zipcode"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-item>
+                            <ion-label position="stacked">Pays</ion-label>
+                            <ion-input type="text" name="country"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-radio-group>
+                            <ion-list-header>
+                                <ion-label>Sexe</ion-label>
+                            </ion-list-header>
+                            <ion-item>
+                                <ion-label>Homme</ion-label>
+                                <ion-radio slot="end" value="h" checked></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Femme</ion-label>
+                                <ion-radio slot="end" value="f" checked></ion-radio>
+                            </ion-item>
+                        </ion-radio-group>
+                    </ion-col>
+                </ion-row>
+            </ion-list>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-button slot="start" (click)="slider.slidePrev()">
+                Précédent
+                <ion-icon slot="start" name="arrow-back"></ion-icon>
+            </ion-button>
+            <ion-button (click)="slider.slideNext()">
+                Suivant
+                <ion-icon slot="end" name="arrow-forward"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Connexion</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form id="login-form" action="">
+        <ion-list lines="full">
+            <ion-item>
+                <ion-label position="stacked">Login</ion-label>
+                <ion-input type="text" name="email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="stacked">Mot de passe</ion-label>
+                <ion-input type="password" name="password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-button id="submit-btn" size="default" expand="block" type="submit" color="success">
+            Soumettre
+            <ion-icon slot="end" name="checkmark"></ion-icon>
+        </ion-button>
+    </form>
+
+    <ion-row>
+        <ion-col size="12">
+           <div class="forget-password">Mot de passe oublié</div>
+        </ion-col>
+        <ion-col size="12">
+            <div>Vous n'avez pas de compte ? <br> <strong [routerLink]="['/register']" > Inscrivez vous </strong></div>
+        </ion-col>
+    </ion-row>
+</ion-content>
